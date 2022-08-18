@@ -1,4 +1,6 @@
-const btn1= document.getElementById('btn1');
+		// week number to week name program
+		//
+			const btn1= document.getElementById('btn1');
 			const out1=document.querySelector('#output1');
 			document.querySelector(".output1").style.display = "none";
 			function fun1(){
@@ -35,6 +37,10 @@ const btn1= document.getElementById('btn1');
 
 
 
+
+
+		// maximum between 3 number program
+		//
 			const btn2= document.getElementById('btn2');
 			var out2=document.querySelector('#output2');
 			document.querySelector(".output2").style.display = "none";
@@ -66,6 +72,10 @@ const btn1= document.getElementById('btn1');
 
 
 
+
+
+		//quadratic solver program
+		//
 			const btn3= document.getElementById('btn3');
 			var out3=document.querySelector('#output3');
 			document.querySelector(".output3").style.display = "none";
