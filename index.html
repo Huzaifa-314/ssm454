@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Javascript</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<!-- header section code start -->
+		<header>
+			<div class="container">
+				<div class="header-content">
+					<h3>Assignment week 9</h3>
+					<h1>Intro to java</h1>
+				</div>
+			</div>
+		</header>
+		<!-- header section code end -->
+		<!-- body section code start -->
+		<section>
+			<div class="container">
+				<div class="accordion" id="accordionExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingThree">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						Qudratic solver
+						</button>
+						</h2>
+						<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<input type="number" class="in" id="in31"></input>X<sup>2</sup> + <input type="number" class="in" id="in32"></input>X + <input type="number" class="in" id="in33"></input> = 0
+								<p>
+									<button id="btn3" class="btn3 btn btn-primary ms-4">Solution for X</button>
+								</p>
+								<div id="output3" class="out output3"></div>
+								<div style="font-size: 12px; margin-top: 20px;">*Refresh the web before giving new inputs</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						Maximum between 3 number
+						</button>
+						</h2>
+						<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<p>Enter 3 numbers: </p>
+								<input type="number" class="in" id="in21">
+								<input type="number" class="in" id="in22">
+								<input type="number" class="in" id="in23">
+								<button id="btn2" class="btn btn-primary ms-4">Run</button>
+								<div id="output2" class="out output2"></div>
+								<div style="font-size: 12px; margin-top: 20px;">*Refresh the web before giving new inputs</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+						Week number to week name
+						</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<div class="input1">
+									<label>week number: </label>
+								<input id="txt1" type="number" name="weeknumber" min="1" max="7" placeholder="(1-7)">
+								<button id="btn1" class="btn btn-primary ms-4">Run</button>
+								</div>
+								<div id="output1" class="out output1"></div>
+								<div style="font-size: 12px; margin-top: 20px;">*Refresh the web before giving new inputs</div>
+
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</section>
+		<!-- body section code end -->
+
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
