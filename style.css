@@ -46,14 +46,9 @@ header{
 	border-left:10px solid black;
 }
 
-.output1{
-	margin:1rem;
-}
+
 .in{
 	width: 60px;
-}
-.output2{
-	margin:1rem;
 }
 .btn3{
 	margin: 10px;
@@ -65,4 +60,48 @@ header{
 	padding-left: 10px;
 	font-size: 20px;
 	font-weight: bold;
+	margin: 1rem;
+}
+.output-code{
+	background-color: #f3f3f3;
+	padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+   
+}
+.heading5{
+font-size:30x;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:600px){
+   .container{
+   width: 100%;
+   }
+  .header-content{
+	text-align: center;
+	padding: 20px;
+}
+.header-content h3{
+	font-size: 15px;
+}
+.header-content h1{
+	font-size: 30px;
+	font-weight: bold;
+}
+.accordion-item{
+	width: 95%;
+	margin: auto;
+	margin-bottom: 10px;
+}
 }
