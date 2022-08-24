@@ -1,5 +1,9 @@
 const btn1= document.getElementById('btn1');
 			const out1=document.querySelector('#output1');
+			
+			
+			
+			
 			document.querySelector(".output1").style.display = "none";
 			function fun1(){
 				var txt1=document.getElementById('txt1');
@@ -107,28 +111,109 @@ const btn1= document.getElementById('btn1');
 
 
 
-const btn4 = document.getElementById('btn4');
-const btn41=document.getElementById('btn41');
-			const out4=document.querySelector('#output4');
-			var number = document.getElementById('txt4');
-			document.querySelector(".output4").style.display = "none";
-			function fun4(){
-				
-				var remainer = 0;
-				var count = 0;
-				var sum = 0;
-				while (number != 0) {
-					remainer = number % 10;
-					sum = sum + remainer;
-					number = parseInt(number / 10);
-					count++;
-					
-				}
-				out4.innerHTML=sum;
-				document.querySelector(".output4").style.display = "block";
-			}
-			btn4.addEventListener('click', fun4);
-			document.getElementById("output41").style.display = "none";
-			btn41.addEventListener("click", function(){
-  			document.getElementById("output41").style.display = "block";
-			});
+
+
+var txt4 = document.getElementById("txt4");
+var btn4 = document.getElementById("btn4");
+var out4 = document.getElementById("output4");
+out4.style.display = "none";
+function fun4(){
+var number = parseInt(txt4.value);
+var remainder = 0;
+var sum = 0;
+var count = 0;
+while (number != 0) {
+remainder=number%10;
+sum=sum+remainder;
+number=parseInt(number/10);
+count++;
+}
+out4.innerHTML= " total digit is: " + count + ".  Summation of digits: " +sum;
+out4.style.display = "block";
+}
+btn4.addEventListener('click',fun4);
+
+
+var btn41=document.getElementById("btn41");
+document.getElementById("output41").style.display = "none";
+
+document.getElementById("btn41").addEventListener('click',function(){
+    document.getElementById("output41").style.display = "block";
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var txt5 = document.getElementById("txt5");
+var btn5 = document.getElementById("btn5");
+var out5 = document.getElementById("output5");
+out5.style.display = "none";
+function fun5(){
+out5.innerHTML = " ";
+for(var c,a=-1,b=1,i=0;i<txt5.value;i++,c=a,a=b,b=c+b){
+
+out5.innerHTML += (a+b)+", ";}
+out5.style.display = "block";
+}
+btn5.addEventListener('click',fun5);
+
+
+var btn51=document.getElementById("btn51");
+document.getElementById("output51").style.display = "none";
+
+document.getElementById("btn51").addEventListener('click',function(){
+    document.getElementById("output51").style.display = "block";
+});
+
+
+
+
+
+
+var txt6 = document.getElementById("txt6");
+var btn6 = document.getElementById("btn6");
+var out6 = document.getElementById("output6");
+out6.style.display = "none";
+function fun6(){
+
+var num = txt6.value;
+var sum = 0;
+for (var i = 1; i < num; i++) {
+    if (num % i == 0) {
+        sum = sum + i;
+    }
+    else{
+        continue;
+    }
+}
+if (num == sum) {
+    out6.innerHTML = "it is perfect :)";
+}
+else{
+    out6.innerHTML = "sorry, not perfect :)";
+}
+
+
+out6.style.display = "block";
+}
+btn6.addEventListener('click',fun6);
+
+
+var btn61=document.getElementById("btn61");
+document.getElementById("output61").style.display = "none";
+
+document.getElementById("btn61").addEventListener('click',function(){
+    document.getElementById("output61").style.display = "block";
+});
+
