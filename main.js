@@ -1,9 +1,5 @@
-const btn1= document.getElementById('btn1');
+/*const btn1= document.getElementById('btn1');
 			const out1=document.querySelector('#output1');
-			
-			
-			
-			
 			document.querySelector(".output1").style.display = "none";
 			function fun1(){
 				var txt1=document.getElementById('txt1');
@@ -38,12 +34,15 @@ const btn1= document.getElementById('btn1');
 			btn11.addEventListener("click", function(){
   			document.getElementById("output11").style.display = "block";
 			});
+*/
 
 
 
 
 
-			const btn2= document.getElementById('btn2');
+
+
+/*			const btn2= document.getElementById('btn2');
 			var out2=document.querySelector('#output2');
 			document.querySelector(".output2").style.display = "none";
 			function fun2(){
@@ -74,7 +73,7 @@ const btn1= document.getElementById('btn1');
   			document.getElementById("output21").style.display = "block";
 			});
 
-
+*/
 
 
 
@@ -181,6 +180,10 @@ document.getElementById("btn51").addEventListener('click',function(){
 
 
 
+
+
+
+
 var txt6 = document.getElementById("txt6");
 var btn6 = document.getElementById("btn6");
 var out6 = document.getElementById("output6");
@@ -205,6 +208,30 @@ else{
 }
 
 
+
+function fact(x){
+    var f = 1;
+    for (var i=1; i<=x;i++) {
+        f*=i;
+    }
+    return f;
+}
+var num1=num;
+var rem= 0;
+var sum1=0;
+while (num1 != 0) {
+rem = num1 % 10;
+sum1 += fact(rem);
+num1=parseInt(num1/10);
+}
+
+if (num == sum1) {
+    out6.innerHTML += "<br>it is strong :)";
+}
+else{
+    out6.innerHTML += "<br>sorry, not strong :)";
+}
+
 out6.style.display = "block";
 }
 btn6.addEventListener('click',fun6);
@@ -216,4 +243,76 @@ document.getElementById("output61").style.display = "none";
 document.getElementById("btn61").addEventListener('click',function(){
     document.getElementById("output61").style.display = "block";
 });
+
+
+
+
+
+
+
+
+var txt7 = document.getElementById("txt7");
+var btn7 = document.getElementById("btn7");
+var out7= document.getElementById("output7");
+out7.style.display="none";
+
+function fun7(){
+function prime(n){
+var i,j,trace,t=1;
+    for(i=3;t<=(n-1);i++){
+        for(j=2;j<i;j++){
+            if(i%j==0){
+                trace=0;
+                break;
+            }
+            else{
+                trace=1;
+            }
+        
+
+        }
+        t=t+trace;
+    }
+    return i-1;
+}
+out7.innerHTML = " ";
+var count7 = 0;
+for(var i = 1; prime(i)<= txt7.value;i++){
+        if((prime(i)+2) == prime(i+1)){
+            out7.innerHTML +="<span style='color:darkred;'>"+prime(i)+"</span>" + ",";
+            
+        }
+       else if((prime(i)-2) == prime(i-1)){
+            out7.innerHTML +="<span style='color:darkred;'>"+prime(i)+"</span>" + ", ";
+            
+        }
+        else{
+        out7.innerHTML += prime(i) + ", ";
+        }
+        count7++;
+    }
+
+
+    out7.innerHTML += "<br><br> Total " + count7+"<br><span style='color:darkred'>*Twins</span>";
+    
+    out7.style.display="block";
+}
+
+btn7.addEventListener('click',fun7)
+var btn71=document.getElementById("btn71");
+document.getElementById("output71").style.display = "none";
+
+document.getElementById("btn71").addEventListener('click',function(){
+    document.getElementById("output71").style.display = "block";
+});
+
+
+
+
+
+
+
+
+
+
 
