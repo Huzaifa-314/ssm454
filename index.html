@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!-- header section code start -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <h3>Assignment week 10</h3>
+          <h1>Intro to java</h1>
+        </div>
+      </div>
+    </header>
+    <!-- header section code end -->
+    <!-- body section code start -->
+    <section>
+      <div class="container">
+        <div class="accordion" id="accordionExample">
+            
+            
+            
+            
+            
+ <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+            <button style="font-size:22px;font-weight:600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            Prime Number between 1-n
+            </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="input7">
+                  <label>From 1 to: </label>
+                  <input class="in" id="txt7" type="number" name="prime">
+                  <button onclick="generatePrime(txt7.value,output7)" class="btn btn-primary ms-4">Run</button>
+                </div>
+                <div id="output7" class="out output7"></div>
+                <div style="font-size: 12px; margin-top: 20px;" class="d-inline-block" >*Refresh the web before giving new inputs</div>
+                <button onclick="showCode(output71)" class="btn btn-primary btn-code btn-code7 ms-5">View Code</button>
+                <div id="output71" class="output-code">
+<code><pre>
+function prime(n){
+    var i,j,trace,t=1;
+    for(i=3;t <= (n-1);i++){
+        for(j=2;j < i;j++){
+            if(i%j==0){
+                trace=0;
+                break;
+            }
+            else{
+                trace=1;
+            }
+        }
+        t=t+trace;
+    }
+    return i-1;
+}
+
+function nprime(x){
+    for(var i = 1; prime(i) <= x;i++){
+        document.write(prime(i)," ");
+    }
+}
+
+nprime(100);
+                </pre></code></div>
+              </div>
+            </div>
+          </div>        
+                      
+            
+   
+           
+  
+
+
+
+
+   <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+            <button style="font-size:21px;font-weight:bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Fibonacchi
+            </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="input5">
+                  <label>How many terms: </label>
+                  <input class="in" id="txt5" type="number" name="countnumber">
+                  <button onclick="generateFibonacci(txt5.value,output5)" class="btn btn-primary ms-4">Run</button>
+                </div>
+                <div id="output5" class="out output5"></div>
+                <div style="font-size: 12px; margin-top: 20px;" class="d-inline-block" >*Refresh the web before giving new inputs</div>
+                <button onclick="showCode(output51)" class="btn btn-primary btn-code btn-code5 ms-5">View Code</button>
+                <div id="output51" class="output-code"><code><pre>function generateFibonacci(term,output){
+    for(var c,a=-1,b=1,i=0;i< term;i++,c=a,a=b,b=c+b){
+   output.innerHTML += (a+b)+", ";
+   }
+}</pre></code></div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+        
+          
+          
+          
+<div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+            <button style="font-size:20px;font-weight:bold;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Perfect & Strong number
+            </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="input6">
+                  <label>Enter a number: </label>
+                  <input class="in" id="txt6" type="number" name="perfectnum">
+                  <button onclick="checkNumber(txt6.value,output6)" class="btn btn-primary ms-4">Run</button>
+                </div>
+                <div id="output6" class="out output6"></div>
+                <div style="font-size: 12px; margin-top: 20px;" class="d-inline-block" >*Refresh the web before giving new inputs</div>
+                <button onclick="showCode(output61)" class="btn btn-primary btn-code btn-code6 ms-5">View Code</button>
+                <div id="output61" class="output-code"><code>
+<pre>
+//PERFECT PART
+var num = [input from the user];
+var sum = 0;
+for (var i = 1; i < num; i++) {
+    if (num % i == 0) {
+        sum = sum + i;
+    }
+    else{
+        continue;
+    }
+}
+if (num == sum) {
+    out6.innerHTML = "it is perfect :)";
+}
+else{
+    out6.innerHTML = "sorry, not perfect :)";
+}
+function fact(x){
+    var f = 1;
+    for (var i=1; i<=x;i++) {
+        f*=i;
+    }
+    return f;
+}
+
+
+
+//STRONG PART
+var num1=num;
+var rem= 0;
+var sum1=0;
+while (num1 != 0) {
+rem = num1 % 10;
+sum1 += fact(rem);
+num1=parseInt(num1/10);
+}
+
+if (num == sum1) {
+    out6.innerHTML += "it is strong :)";
+}
+else{
+    out6.innerHTML += "sorry, not strong :)";
+}
+
+}
+</pre>
+                </code></div>
+              </div>
+            </div>
+          </div>                  
+          
+          
+          
+          
+          
+          
+          
+       
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Count number in a digit and summation of digits
+            </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="input4">
+                  <label>Enter a number: </label>
+                  <input class="in" id="txt4" type="number" name="countnumber">
+                  <button onclick="countDigit(txt4.value,output4)" class="btn btn-primary ms-4">Run</button>
+                </div>
+                <div id="output4" class="out output4"></div>
+                <div style="font-size: 12px; margin-top: 20px;" class="d-inline-block" >*Refresh the web before giving new inputs</div>
+                <button onclick="showCode(output41)" class="btn btn-primary btn-code btn-code4 ms-5">View Code</button>
+                <div id="output41" class="output-code"><code>
+                  var number = getElementById("input");<br>
+                  var remainer = 0;<br>
+                  var count = 0;<br>
+                  var sum = 0;<br>
+                  while (number != 0) {<br>
+                  remainer = number % 10;<br>
+                  sum = sum + remainer;<br>
+                  number = parseInt(number / 10);<br>
+                  count++;<br>
+                  }
+                </code></div>
+              </div>
+            </div>
+          </div>
+    
+    
+          
+          
+          
+          
+   
+   
+   <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Qudratic solver
+            </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <input type="number" class="in" id="in31"></input>X<sup>2</sup> + <input type="number" class="in" id="in32"></input>X + <input type="number" class="in" id="in33"></input> = 0
+                <p>
+                  <button onclick="solveQuadratic(in31.value,in32.value,in33.value,output3)" class="btn3 btn btn-primary ms-lg-4">Solution for X</button>
+                </p>
+                <div id="output3" class="out output3"></div>
+                <div style="font-size: 12px; margin-top: 20px;" class="d-inline-block">*Refresh the web before giving new inputs</div>
+                <button onclick="showCode(output31)" class="btn btn-primary btn-code btn-code1 ms-5">View Code</button>
+                <div id="output31" class="output-code"><code>
+<pre>function solveQuadratic(a,b,c,output){
+    var d=(b*b)-(4*a*c);
+    if (d>-1) {
+        var x1=(-b+Math.sqrt(d))/(2*a);
+        var x2=(-b-Math.sqrt(d))/(2*a);
+        output.innerHTML = "X =	"+ x1 + " , " + x2;
+    }
+    else {
+        output.innerHTML = "opps! sorry. Roots are complex.🙂";
+    }
+}</pre>
+                </code></div>
+              </div>
+            </div>
+          </div>
+          
+            
+   
+          
+          
+          
+          
+          
+          
+          
+        </div>
+      </div>
+    </section>
+    <!-- body section code end -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
