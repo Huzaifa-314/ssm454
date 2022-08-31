@@ -10,5 +10,5 @@ content.style.display = 'none';
 setTimeout(() => {
   content.style.display = 'block';
     loading.style.display = 'none';
-    }, 4000)
+    }, 3000)
     
