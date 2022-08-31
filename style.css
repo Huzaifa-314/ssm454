@@ -1,0 +1,16 @@
+a{
+        
+            text-decoration:none;
+                font-size:30px;
+                    text-align:center;
+                        color:black;
+                            background:#1538ff;
+                                border-radius:3rem;
+                                    
+                                    }
+                                    body{
+                                        display:grid;
+                                            grid-template-columns:auto auto;
+                                                column-gap:2rem;
+                                                }
+}
