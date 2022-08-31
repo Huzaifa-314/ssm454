@@ -1,0 +1,122 @@
+*{
+    	margin: 0;
+        	padding: 0;
+            }
+
+
+            .preloader-content{
+            	width: 100%;
+                	height: 100vh;
+                    	display: flex;
+                        	justify-content: center;
+                            	align-items: center;
+
+                                }
+                                .preloader-box{
+                                	position: absolute;
+                                    	height:90px;
+                                        	width: 90px;
+
+                                            	transform: rotate(720deg);
+                                                }
+
+                                                .dot{
+                                                	height: 15px;
+                                                    	width: 15px;
+                                                        	background: blue;
+                                                            	border-radius: 50%;
+                                                                	margin: auto;
+                                                                    }
+
+
+
+
+                                                                    header{
+                                                                    	width: 100%;
+                                                                        	height: 150px;
+                                                                            	background: #FFD8A9	;
+                                                                                	border-bottom-left-radius: 20%;
+                                                                                    	border-bottom-right-radius: 20%;
+                                                                                        	position: relative;
+                                                                                            	display:flex;
+                                                                                                	justify-content:center;
+                                                                                                    	align-items:center;
+                                                                                                        	overflow:hidden;
+
+                                                                                                            }
+                                                                                                            header p{
+                                                                                                            	font-size: 2rem;
+                                                                                                                	font-weight: bold;
+                                                                                                                    	position:absolute;
+                                                                                                                        	margin-top:3.3rem;
+                                                                                                                            }
+
+
+
+                                                                                                                            .cira{
+                                                                                                                            	height: 100px;
+                                                                                                                                	width: 100px;
+                                                                                                                                    	border-radius: 50%;
+                                                                                                                                        	position: absolute;
+                                                                                                                                             right:100%;
+                                                                                                                                              transform:translate(150%,-50%);
+                                                                                                                                              	background: #EC7272;
+
+
+                                                                                                                                                }
+                                                                                                                                                .cirb{
+                                                                                                                                                 position:absolute;
+                                                                                                                                                 	height: 80px;
+                                                                                                                                                    	width: 80px;
+                                                                                                                                                        	border-radius: 50%;
+                                                                                                                                                            	background: #d9a8a8;
+                                                                                                                                                                	right:0;
+                                                                                                                                                                    	bottom:0;
+                                                                                                                                                                        	transform:translate(-80%,50%);
+                                                                                                                                                                            	
+
+
+                                                                                                                                                                                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                @keyframes rotate {
+                                                                                                                                                                                	0%{
+                                                                                                                                                                                    		transform: rotate(0deg);
+                                                                                                                                                                                            	}
+                                                                                                                                                                                                	100%{
+                                                                                                                                                                                                    		transform: rotate(720deg);
+                                                                                                                                                                                                            	}
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                                }
+
+
+                                                                                                                                                                                                                
+}
